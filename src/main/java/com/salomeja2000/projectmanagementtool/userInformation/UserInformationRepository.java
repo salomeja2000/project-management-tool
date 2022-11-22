@@ -14,7 +14,7 @@ public class UserInformationRepository implements UserInformationDao {
         String statement = """
             SELECT Id, User_ID, Email, Phone, Home_Address, City, Postal_Code
             FROM User_Information
-            WHERE Id = ?;
+            WHERE User_Id = ?;
             """;
         return jdbcTemplate.query(statement, new UserInformationRowMapper(), id).stream().findFirst();
     }
@@ -40,7 +40,7 @@ public class UserInformationRepository implements UserInformationDao {
     public int deleteUserInformation(int id) {
         String statement = """
             DELETE FROM User_Information 
-            WHERE Id = ?;
+            WHERE User_Id = ?;
             """;
         return jdbcTemplate.update(statement, id);
     }
@@ -50,7 +50,7 @@ public class UserInformationRepository implements UserInformationDao {
         String statement = """
             UPDATE User_Information
             SET Email = ?, Phone = ?, Home_Address = ?, City = ?, Postal_Code = ?
-            WHERE ID = ?;
+            WHERE User_ID = ?;
             """;
         return jdbcTemplate.update(
                 statement,
