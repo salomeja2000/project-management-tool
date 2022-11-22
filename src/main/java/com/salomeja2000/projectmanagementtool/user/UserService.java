@@ -1,11 +1,10 @@
 package com.salomeja2000.projectmanagementtool.user;
 
 import com.salomeja2000.projectmanagementtool.exception.NotFoundException;
-import lombok.AllArgsConstructor;
-import org.springframework.stereotype.Service;
-
 import java.util.List;
 import java.util.Optional;
+import lombok.AllArgsConstructor;
+import org.springframework.stereotype.Service;
 
 @AllArgsConstructor
 @Service

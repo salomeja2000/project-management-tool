@@ -1,9 +1,8 @@
 package com.salomeja2000.projectmanagementtool.user;
 
-import lombok.AllArgsConstructor;
-import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
+import org.springframework.web.bind.annotation.*;
+import lombok.AllArgsConstructor;
 
 @AllArgsConstructor
 @RestController

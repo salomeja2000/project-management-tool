@@ -1,9 +1,8 @@
 package com.salomeja2000.projectmanagementtool.user;
 
-import org.springframework.jdbc.core.RowMapper;
-
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import org.springframework.jdbc.core.RowMapper;
 
 public class UserRowMapper implements RowMapper<User> {
     @Override
