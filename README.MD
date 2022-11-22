@@ -16,6 +16,6 @@ If you use custom H2 database username and passwordm make sure to change it in t
 Then, run it as a Java application from the main server application class:
 `src/main/java/com/salomeja2000/projectmanagementtool/ProjectManagementToolApplication.java`
 
-When the server application is running, you can open the Front-end application by navigating to the `src/main/js/projects-frontend/src` folder and run the following command: `src/main/js/projects-frontend/src`
+When the server application is running, you can open the Front-end application by navigating to the `src/main/js/projects-frontend/src` folder and run the following command: `npm run`
 
 Once the web application is loaded, it will be opened on http://localhost:3000/
